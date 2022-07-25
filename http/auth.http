@@ -1,0 +1,35 @@
+# Anonymous (кто угодно)
+POST http://localhost:5000/auth/register/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "example7654@gmail.com",
+  "password_hash": "Yhgcc@3JhD32244"
+}
+
+###
+
+# Anonymous (кто угодно)
+POST http://localhost:5000/auth/login/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "example7654@gmail.com",
+  "password_hash": "Yhgcc@3JhD32244"
+}
+
+###
+
+# Anonymous (кто угодно)
+PUT http://localhost:5000/auth/login/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "access_token": "",
+  "refresh_token": ""
+}
+
+###

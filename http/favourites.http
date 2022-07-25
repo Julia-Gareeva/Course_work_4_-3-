@@ -1,0 +1,29 @@
+# Доступ только для авторизированных - auth_required
+GET http://localhost:5000/favourites/movies/
+Accept: application/json
+Authorization: Bearer ...
+
+###
+
+# Доступ только для авторизированных - auth_required
+POST http://localhost:5000/favourites/movies/3
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer ...
+
+{
+  "id": ""
+}
+
+###
+
+# Доступ только для авторизированных - auth_required
+GET http://localhost:5000/favourites/movies/2
+Accept: application/json
+Authorization: Bearer ...
+
+###
+
+# Доступ только для авторизированных - auth_required
+DELETE http://localhost:5000/favourites/movies/2
+Authorization: Bearer ...

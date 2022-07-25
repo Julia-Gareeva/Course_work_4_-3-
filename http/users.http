@@ -1,0 +1,46 @@
+# Anonymous (кто угодно)
+GET http://localhost:5000/users/
+Accept: application/json
+
+###
+
+# Anonymous (кто угодно)
+GET http://localhost:5000/users/1
+Accept: application/json
+
+###
+
+# Доступ только для авторизированных - auth_required
+# Доступ только для самого пользователя - myself_required
+PUT http://localhost:5000/users/password/
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "password_1": "",
+  "password_2": ""
+}
+
+###
+
+# Доступ только для авторизированных - auth_required
+# Доступ только для самого пользователя - myself_required
+PATCH http://localhost:5000/users/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer ...
+
+{
+  "email": "example188@yandex.ru",
+  "name": "Ольга",
+  "surname": "Козлова",
+  "favorite_genre": "Драма"
+}
+
+###
+
+# Доступ только для авторизированных - auth_required
+# Доступ только для самого пользователя - myself_required
+DELETE http://localhost:5000/users/2
+Authorization: Bearer ...

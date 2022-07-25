@@ -1,0 +1,9 @@
+# Anonymous (кто угодно)
+GET http://localhost:5000/directors/
+Accept: application/json
+
+###
+
+# Anonymous (кто угодно)
+GET http://localhost:5000/directors/5
+Accept: application/json
